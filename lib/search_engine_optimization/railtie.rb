@@ -1,3 +1,4 @@
+require 'mozaic'
 require 'rails/railtie'
 
 module SearchEngineOptimization
