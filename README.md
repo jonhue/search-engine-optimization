@@ -48,11 +48,24 @@ gem 'search-engine-optimization', github: 'jonhue/search-engine-optimization'
 
 ### Meta tags
 
-...
+Use [metamagic](https://github.com/lassebunk/metamagic) to add titles and descriptions to your views.
 
 ### Schemas
 
-...
+Search Engine Optimization assists you in creating schema tags that will enhance SERPs and click rates.
+
+Use the `seo/schema` component:
+
+```haml
+= component 'seo/schema', type: :article, options
+```
+
+Here is a list of available types:
+
+* [`:aggregate_rating`](components/schemas/aggregate_rating.md)
+* [`:article`](components/schemas/article.md)
+* [`:organization`](components/schemas/organization.md)
+* [`:person`](components/schemas/person.md)
 
 ---
 

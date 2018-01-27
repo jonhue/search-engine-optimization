@@ -1,11 +1,11 @@
 "@type" : "Article",
-"author" : { <%= component 'seo/schema/person', name: options[:author] %> },
-"publisher" : { <%= component 'seo/schema/organization', name: options[:publisher] %> },
-"aggregateRating" : { <%= component 'seo/schema/aggregate_rating', name: options[:aggregate_rating] %> }
+"aggregateRating" : { <%= component 'seo/schema/aggregate_rating', options[:aggregate_rating] %> },
+"author" : { <%= component 'seo/schema/person', options[:author] %> },
+"publisher" : { <%= component 'seo/schema/organization', options[:publisher] %> }
 
-<%= component 'seo/schema/properties/name', name: options[:name] %>
+<%= component 'seo/schema/properties/articleBody', article_body: options[:article_body] %>
+<%= component 'seo/schema/properties/articleSection', article_section: options[:article_section] %>
 <%= component 'seo/schema/properties/datePublished', date_published: options[:date_published] %>
 <%= component 'seo/schema/properties/image', image: options[:image] %>
-<%= component 'seo/schema/properties/articleSection', article_section: options[:article_section] %>
-<%= component 'seo/schema/properties/articleBody', article_body: options[:article_body] %>
+<%= component 'seo/schema/properties/name', name: options[:name] %>
 <%= component 'seo/schema/properties/url', url: options[:url] %>

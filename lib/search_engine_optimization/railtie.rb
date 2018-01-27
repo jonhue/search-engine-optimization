@@ -29,7 +29,7 @@ module SearchEngineOptimization
                     false if options[:date_published].nil?
                 end
                 config.define_component 'seo/schema/properties/image' do |options|
-                    options[:image] = image_url options[:image] unless options[:image].nil?
+                    options[:image] = image_url options[:image] unless options[:image].nil? || options[:image].include?('http')
                     false if options[:image].nil?
                 end
                 config.define_component 'seo/schema/properties/name' do |options|
