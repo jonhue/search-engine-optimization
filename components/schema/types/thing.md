@@ -5,7 +5,7 @@
 ### Usage
 
 ```haml
-= component 'seo/schema', type: :thing, name: 'Jonas Hübotter'
+= component 'seo/schema', type: :thing, name: 'This is a thing'
 ```
 
 This translates to:
@@ -15,7 +15,7 @@ This translates to:
 {
     "@context" : "http://schema.org",
     "@type" : "Thing",
-    "name" : "Jonas Hübotter"
+    "name" : "This is a thing"
 }
 </script>
 ```
