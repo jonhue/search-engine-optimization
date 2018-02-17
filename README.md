@@ -63,6 +63,14 @@ Use the `seo/schema` component:
 
 Here is a list of available types:
 
+* [Thing](components/schema/types/aggregate_rating.md)
+* [Thing](components/schema/types/article.md)
+* [Thing](components/schema/types/brand.md)
+* [Thing](components/schema/types/creative_work.md)
+* [Thing](components/schema/types/intangible.md)
+* [Thing](components/schema/types/organization.md)
+* [Thing](components/schema/types/person.md)
+* [Thing](components/schema/types/rating.md)
 * [Thing](components/schema/types/thing.md)
 
 #### Nested types
