@@ -1,6 +1,6 @@
 <script type="application/ld+json">
 {
     "@context" : "http://schema.org",
-    <%= component "seo/schema/#{options[:type].underscore}", options %>
+    <%= component "seo/schema/#{options[:type].to_s.underscore}", options %>
 }
 </script>
