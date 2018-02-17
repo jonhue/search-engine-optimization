@@ -4,6 +4,15 @@
 
 * nothing yet
 
+### 1.1.0 - 2018/02/17
+
+* features
+    * new `Brand` type
+    * new `CreativeWork` type
+    * new `Intangible` type
+    * new `Rating` type
+    * new `Thing` type
+
 ### 1.0.2 - 2018/02/17
 
 * bugfixes
