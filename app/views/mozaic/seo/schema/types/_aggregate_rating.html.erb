@@ -1,5 +1,5 @@
-<%= component 'seo/schema/property', property: 'itemReviewed', value: options.delete(:item_reviewed) %>,
-<%= component 'seo/schema/property', property: 'ratingCount', value: options.delete(:rating_count) %>,
-<%= component 'seo/schema/property', property: 'reviewCount', value: options.delete(:review_count) %>,
+<%= component 'seo/schema/property', property: 'itemReviewed', value: options.delete(:item_reviewed) if options[:item_reviewed] %>
+<%= component 'seo/schema/property', property: 'ratingCount', value: options.delete(:rating_count) if options[:rating_count] %>
+<%= component 'seo/schema/property', property: 'reviewCount', value: options.delete(:review_count) if options[:review_count] %>
 
-<%= component 'seo/schema/types/rating', options %>
+<%= component 'seo/schema/types/rating', options if options.length > 0 %>

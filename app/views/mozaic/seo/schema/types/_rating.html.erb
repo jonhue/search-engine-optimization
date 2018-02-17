@@ -1,7 +1,7 @@
-<%= component 'seo/schema/property', property: 'author', value: options.delete(:author) %>,
-<%= component 'seo/schema/property', property: 'bestRating', value: options.delete(:best_rating) %>,
-<%= component 'seo/schema/property', property: 'ratingValue', value: options.delete(:rating_value) %>,
-<%= component 'seo/schema/property', property: 'reviewAspect', value: options.delete(:review_aspect) %>,
-<%= component 'seo/schema/property', property: 'worstRating', value: options.delete(:worst_rating) %>,
+<%= component 'seo/schema/property', property: 'author', value: options.delete(:author) if options[:author] %>
+<%= component 'seo/schema/property', property: 'bestRating', value: options.delete(:best_rating) if options[:best_rating] %>
+<%= component 'seo/schema/property', property: 'ratingValue', value: options.delete(:rating_value) if options[:rating_value] %>
+<%= component 'seo/schema/property', property: 'reviewAspect', value: options.delete(:review_aspect) if options[:review_aspect] %>
+<%= component 'seo/schema/property', property: 'worstRating', value: options.delete(:worst_rating) if options[:worst_rating] %>
 
-<%= component 'seo/schema/types/intangible', options %>
+<%= component 'seo/schema/types/intangible', options if options.length > 0 %>

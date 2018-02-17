@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 1.1.1 - 2018/02/17
+
+* bugfixes
+    * fixed `undefined method 'render' for nil`
+
 ### 1.1.0 - 2018/02/17
 
 * features
@@ -16,7 +21,7 @@
 ### 1.0.2 - 2018/02/17
 
 * bugfixes
-    * fixed `undefined method 'underscore for symbol'`
+    * fixed `undefined method 'underscore' for symbol`
 
 ### 1.0.1 - 2018/02/08
 
