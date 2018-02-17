@@ -1,0 +1,22 @@
+<%= component 'seo/schema/property', property: 'aggregateRating', value: options.delete(:aggregate_rating) if options[:aggregate_rating] %>
+<%= component 'seo/schema/property', property: 'areaServed', value: options.delete(:area_served) if options[:area_served] %>
+<%= component 'seo/schema/property', property: 'audience', value: options.delete(:audience) if options[:audience] %>
+<%= component 'seo/schema/property', property: 'availableChannel', value: options.delete(:available_channel) if options[:available_channel] %>
+<%= component 'seo/schema/property', property: 'award', value: options.delete(:award) if options[:award] %>
+<%= component 'seo/schema/property', property: 'brand', value: options.delete(:brand) if options[:brand] %>
+<%= component 'seo/schema/property', property: 'broker', value: options.delete(:broker) if options[:broker] %>
+<%= component 'seo/schema/property', property: 'category', value: options.delete(:category) if options[:category] %>
+<%= component 'seo/schema/property', property: 'hasOfferCatalog', value: options.delete(:has_offer_catalog) if options[:has_offer_catalog] %>
+<%= component 'seo/schema/property', property: 'hoursAvailable', value: options.delete(:hours_available) if options[:hours_available] %>
+<%= component 'seo/schema/property', property: 'isRelatedTo', value: options.delete(:is_related_to) if options[:is_related_to] %>
+<%= component 'seo/schema/property', property: 'isSimilarTo', value: options.delete(:is_similar_to) if options[:is_similar_to] %>
+<%= component 'seo/schema/property', property: 'logo', value: options.delete(:logo) if options[:logo] %>
+<%= component 'seo/schema/property', property: 'offers', value: options.delete(:offers) if options[:offers] %>
+<%= component 'seo/schema/property', property: 'provider', value: options.delete(:provider) if options[:provider] %>
+<%= component 'seo/schema/property', property: 'providerMobility', value: options.delete(:provider_mobility) if options[:provider_mobility] %>
+<%= component 'seo/schema/property', property: 'review', value: options.delete(:review) if options[:review] %>
+<%= component 'seo/schema/property', property: 'serviceOutput', value: options.delete(:service_output) if options[:service_output] %>
+<%= component 'seo/schema/property', property: 'serviceType', value: options.delete(:service_type) if options[:service_type] %>
+<%= component 'seo/schema/property', property: 'termsOfService', value: options.delete(:terms_of_service) if options[:terms_of_service] %>
+
+<%= component 'seo/schema/types/intangible', options if options.length > 0 %>

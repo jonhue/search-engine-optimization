@@ -68,9 +68,12 @@ Here is a list of available types:
 * [Brand](components/schema/types/brand.md)
 * [CreativeWork](components/schema/types/creative_work.md)
 * [Intangible](components/schema/types/intangible.md)
+* [Offer](components/schema/types/offer.md)
 * [Organization](components/schema/types/organization.md)
 * [Person](components/schema/types/person.md)
+* [Product](components/schema/types/product.md)
 * [Rating](components/schema/types/rating.md)
+* [Service](components/schema/types/service.md)
 * [Thing](components/schema/types/thing.md)
 
 #### Nested types

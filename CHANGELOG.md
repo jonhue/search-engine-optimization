@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 1.2.0 - 2018/02/17
+
+* features
+    * new `Offer` type
+    * new `Product` type
+    * new `Service` type
+
 ### 1.1.1 - 2018/02/17
 
 * bugfixes
