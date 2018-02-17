@@ -12,6 +12,7 @@ Advanced SEO for Rails apps with schema tags.
 * [Usage](#philosophy)
     * [Meta tags](#meta-tags)
     * [Schemas](#schemas)
+        * [Nested types](#nested-types)
 * [To Do](#to-do)
 * [Contributing](#contributing)
     * [Contributors](#contributors)
@@ -62,10 +63,15 @@ Use the `seo/schema` component:
 
 Here is a list of available types:
 
-* [`:aggregate_rating`](components/schemas/aggregate_rating.md)
-* [`:article`](components/schemas/article.md)
-* [`:organization`](components/schemas/organization.md)
-* [`:person`](components/schemas/person.md)
+* [Thing](components/schema/types/thing.md)
+
+#### Nested types
+
+You can nest types in your schema tag:
+
+```haml
+= component 'seo/schema', type: :person, name: 'Parent', children: [{ type: :person, name: 'Child 1' }, { type: :person, name: 'Child 2' }], parent: { type: :person, name: 'Grandparent' }
+```
 
 ---
 
